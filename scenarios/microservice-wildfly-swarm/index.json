@@ -1,0 +1,73 @@
+{
+    "pathwayTitle": "OpenShift Cloud-Native Roadshow",
+    "icon": "fa-openshift",
+    "title": "Enterprise Microservices with WildFly Swarm",
+    "description": "",
+    "difficulty": "intermediate",
+    "time": "10-20 minutes",
+    "details": {
+        "steps": [
+            {
+                "title": "Explore WildFly Swarm Project",
+                "text": "01-maven-project.md"
+            },
+            {
+                "title": "Build Maven Project",
+                "text": "02-maven-build.md"
+            },
+            {
+                "title": "Create a Domain Model",
+                "text": "03-create-domain.md"
+            },
+            {
+                "title": "Create a RESTful Service",
+                "text": "04-create-rest.md"
+            },
+            {
+                "title": "Testing Inventory Service",
+                "text": "05-test-local.md"
+            },
+            {
+                "title": "Source-to-Image",
+                "text": "06-s2i.md"
+            },
+            {
+                "title": "Deploy on OpenShift",
+                "text": "07-deploy.md"
+            },
+            {
+                "title": "Explore Created Resources",
+                "text": "08-explore-resources.md"
+            },
+            {
+                "title": "Verify on OpenShift",
+                "text": "09-verify.md"
+            }
+
+        ],
+        "intro": {
+            "code": "run-init.sh",
+            "text": "00-intro.md"
+        },
+        "finish": {
+          "text": "99-outro.md"
+        }
+    },
+    "files": [
+      "./src/main/java/com/redhat/cloudnative/inventory/Inventory.java",
+      "./src/main/java/com/redhat/cloudnative/inventory/InventoryResource.java"
+    ],
+    "environment": {
+        "uilayout": "editor-terminal",
+        "hideintro": false,
+        "uisettings": "java",
+        "uieditorpath": "/root/inventory-wildfly-swarm",
+        "showdashboard": true,
+        "dashboard": "Dashboard",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "openshift-roadshow",
+        "port": 8443
+    }
+}
